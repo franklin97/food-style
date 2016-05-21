@@ -15,7 +15,6 @@ height: 100%;
 }
 .spot{
       position:relative;
-  border: 1px solid cyan;
  
 }
 .spot div {
@@ -25,37 +24,36 @@ height: 100%;
     position:absolute;
   left:43%;
   top:80px;
-  border:1px solid red;
+
  
 }
 #spot2{
   position:absolute; 
-border:1px solid blue;
+
   left:43%;
   top:90px;
 }
 #spot3{
   position:absolute;
-  border:1px solid green;
+
   left:45%;
   top: 40px;
   
 }
 #spot4{
   position:absolute;
-  border:1px solid orange;
+
   left:45%;
   top:60px;
 }
 #spot5{
   position:absolute;
-  border:1px solid pink;
+
   left:45%;
    top:120px;
 }
 #spot6{
   position:absolute;
-  border:1px solid purple;
   left:45%;
   top:140px;
 }

@@ -1,8 +1,8 @@
  // JavaScript File
 $(document).ready(function(){
     
-    [, "JapSou2.mp3"]
-    var currentcountry;
+    setTimeout(playJapAudio, 10000);
+var currentcountry;
     var countries = {
 
     Japan: [{name: 'Avocado', image: 'avocados.png'},
@@ -19,14 +19,14 @@ $(document).ready(function(){
     
     function playJapAudio(){
  var TheOne = Math.floor((Math.random() * 2) + 1);
- 
+ console.log(TheOne);
  if(TheOne == 1)
  {
-      $('#JapSou').get(0).play();
+      $('#JapSou')[0].play();
  }
  else
  {
-      $('#JapSou2').get(0).play();
+      $('#JapSou2')[0].play();
  }
 }
 
@@ -42,11 +42,15 @@ $(document).ready(function(){
         console.log(ingredient.name);
     }
    //$('#plate').css('height', window.innerHeight/2);
-   /* $('#next').click(function(){
-        $('.container-fluid').show();
-        $('')
+    $('.button1').click(function(){
+        $('.contained').show();
+        $('#result').hide();
     })
-    */
+    $('.button2').click(function() {
+        $('#result').show();
+        $('.contained').hide();
+    })
+    
     var ingredientCount = 1;
     var maxIngredient = 6;
     var userIngredient = [];
