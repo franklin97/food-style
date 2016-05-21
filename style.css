@@ -57,12 +57,7 @@ height: 100%;
   left:45%;
   top:140px;
 }
-#map {
-    height: 300px;
-    width:400px;
-    
-    
-}
+
 
 
 #plate .image-responsive { display: block; }
@@ -79,4 +74,7 @@ height: 100%;
 body{
     background-image: url("http://previews.123rf.com/images/stolenpencil/stolenpencil1506/stolenpencil150600007/41960701-Sushi-and-rolls-seamless-pattern-on-white-background-Stock-Vector.jpg");
     background-size:500px 500px;
+}
+#result{
+    display:none;
 }

@@ -42,13 +42,13 @@ var currentcountry;
         console.log(ingredient.name);
     }
    //$('#plate').css('height', window.innerHeight/2);
-    $('.button1').click(function(){
-        $('.contained').show();
-        $('#result').hide();
-    })
-    $('.button2').click(function() {
+    $('#button1').click(function(){
+        $('#contained').hide();
         $('#result').show();
-        $('.contained').hide();
+    })
+    $('#button2').click(function() {
+        $('.result').show();
+        $('#contained').hide();
     })
     
     var ingredientCount = 1;
