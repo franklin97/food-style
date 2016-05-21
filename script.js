@@ -61,6 +61,10 @@ var currentcountry;
             jQuery('#seaweedImg').show();
         } else if(userIngredient.indexOf("rice") != -1){
             jQuery('#riceImg').show();
+        }  else if(userIngredient.indexOf("soysauce") != -1){
+            alert("PLEASE PICK SOMETHING OF SUSTANENCE. FEED YOURSELF")
+        }  else if(userIngredient.indexOf("mustard") != -1){
+            alert("why.")
         }
         
     })
