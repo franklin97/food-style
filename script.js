@@ -1,7 +1,7 @@
  // JavaScript File
 $(document).ready(function(){
     
-    setTimeout(playJapAudio, 10000);
+    setTimeout(playJapAudio, 20000);
 var currentcountry;
     var countries = {
 
@@ -28,6 +28,7 @@ var currentcountry;
  {
       $('#JapSou2')[0].play();
  }
+ setTimeout(playJapAudio, 30000);
 }
 
     
@@ -45,10 +46,27 @@ var currentcountry;
     $('#button1').click(function(){
         $('#contained').hide();
         $('#result').show();
+        $('#result img').hide();
+        if(userIngredient.indexOf("bacon") != -1){
+            jQuery('#baconImg').show();
+        } else if(userIngredient.indexOf("shrimp") != -1){
+            jQuery('#shrimpImg').show();
+        } else if(userIngredient.indexOf("eel") != -1){
+            jQuery('#eelImg').show();
+        } else if(userIngredient.indexOf("avocados") != -1){
+            jQuery('#avocadosImg').show();
+        }  else if(userIngredient.indexOf("cucumbers") != -1){
+            jQuery('#cucumbersImg').show();
+        }  else if(userIngredient.indexOf("seaweed") != -1){
+            jQuery('#seaweedImg').show();
+        } else if(userIngredient.indexOf("rice") != -1){
+            jQuery('#riceImg').show();
+        }
+        
     })
     $('#button2').click(function() {
-        $('.result').show();
-        $('#contained').hide();
+        $('#result').hide();
+        $('#contained').show();
     })
     
     var ingredientCount = 1;
