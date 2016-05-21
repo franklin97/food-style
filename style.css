@@ -1,0 +1,36 @@
+.playarea{
+    height: 50%;
+}
+
+.container-fluid{
+    
+height: 100%;
+}
+
+#plate{
+    height: 400px;
+    width: 525px;
+    
+}
+#spotOne{
+height:90px;
+width:120px;
+}
+#spotTwo{
+height:90px;
+width:120px;
+}
+#spotThree{
+    
+}
+#map {
+    height: 300px;
+    width:400px;
+    
+    
+}
+
+.image-responsive{
+    width: 100%;
+    max-width: 100%;
+}
