@@ -1,7 +1,7 @@
  // JavaScript File
 $(document).ready(function(){
     
-    
+    [, "JapSou2.mp3"]
     var currentcountry;
     var countries = {
 
@@ -17,6 +17,19 @@ $(document).ready(function(){
     
     };
     
+    function playJapAudio(){
+ var TheOne = Math.floor((Math.random() * 2) + 1);
+ 
+ if(TheOne == 1)
+ {
+      $('#JapSou').get(0).play();
+ }
+ else
+ {
+      $('#JapSou2').get(0).play();
+ }
+}
+
     
     currentcountry = countries.Japan;
     
@@ -36,9 +49,11 @@ $(document).ready(function(){
     */
     var ingredientCount = 1;
     var maxIngredient = 6;
+    var userIngredient = [];
     $('.ingredients').click(function(){
         $('#spot' + ingredientCount + ' img').attr('src', this.src);
-        
+        userIngredient[ingredientCount]=this.id;
+        console.log(userIngredient);
         if(ingredientCount <= maxIngredient){
             ingredientCount++;
         }else {

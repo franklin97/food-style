@@ -6,61 +6,72 @@
     
 height: 100%;
 }
-
 #plate{
-    right:0px;
-    
+
+  position:relative;
+    right:0%;
+  max-width:600px;
+  height:100%;
 }
-#spot{
+.spot{
       position:relative;
-    height:90px;
-    width:120px;
+  border: 1px solid cyan;
+ 
+}
+.spot div {
+  width: 20%;
 }
 #spot1{
     position:absolute;
-  left:270px;
-  top:200px;
+  left:43%;
+  top:80px;
   border:1px solid red;
  
 }
 #spot2{
   position:absolute; 
 border:1px solid blue;
-  left:270px;
-top:190px;
+  left:43%;
+  top:90px;
 }
 #spot3{
   position:absolute;
   border:1px solid green;
-  left:270px;
-  top:180px;
+  left:45%;
+  top: 40px;
   
 }
 #spot4{
   position:absolute;
   border:1px solid orange;
-  left:270px;
-  top:170px;
+  left:45%;
+  top:60px;
 }
 #spot5{
   position:absolute;
   border:1px solid pink;
-  left:270px;
-   top:160px;
+  left:45%;
+   top:120px;
 }
 #spot6{
   position:absolute;
   border:1px solid purple;
-  left:270px;
-  top:150px;
+  left:45%;
+  top:140px;
+}
+#map {
+    height: 300px;
+    width:400px;
+    
+    
 }
 
 
-
+#plate .image-responsive { display: block; }
 .image-responsive{
     width: 100%;
     max-width: 100%;
-    
+  
 }
 .ingredients{
     width: 70px;
